@@ -1,2 +1,1 @@
-# ProjectNuggetSDK
-Official modding SDK for Project Nugget that allows users to make maps &amp; mods.
+not released yet, will release when game releases
