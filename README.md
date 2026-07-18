@@ -15,6 +15,6 @@ The modding SDK has only been tested on Windows 11, other operating systems may 
 Ensure you have all previously stated requirements, then you can read our [wiki](https://github.com/Nugget-Analytics/ProjectNuggetSDK/wiki) to learn how to actually create mods & maps with the Project Nugget Modding SDK.
 
 ## Support
-You can join our Discord community for support on creating things with the SDK here: https://discord.gg/tY2zRVuQpY
+You can join our Discord community for support on creating things with the SDK here: https://discord.gg/8CHqnTpEbz
 
 You can be helped by the community, helped by a staff in a ticket, or you can simply join to be apart of our community!
