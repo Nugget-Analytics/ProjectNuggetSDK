@@ -1,0 +1,7 @@
+ManifestFileVersion: 0
+CRC: 2973228301
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: sdk map
+      Dependencies: {}
