@@ -1,7 +1,7 @@
 ManifestFileVersion: 0
-CRC: 2973228301
+CRC: 283073363
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
-      Name: sdk map
+      Name: sdk example
       Dependencies: {}

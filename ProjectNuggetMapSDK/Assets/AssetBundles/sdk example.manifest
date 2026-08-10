@@ -1,22 +1,20 @@
 ManifestFileVersion: 0
-CRC: 3667581520
+CRC: 4084391400
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 5cc936a8699aebf931eb168da4603534
+    Hash: 95a53c5fc49a56b74d559213c2ecac4a
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 80ab989eaecfaeee2142660a28b3988a
+    Hash: 7f981321c5eb586de2671bc7fab79411
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: 5cc936a8699aebf931eb168da4603534
+    Hash: 95a53c5fc49a56b74d559213c2ecac4a
 HashAppended: 0
 ClassTypes:
 - Class: 1
   Script: {instanceID: 0}
 - Class: 4
-  Script: {instanceID: 0}
-- Class: 20
   Script: {instanceID: 0}
 - Class: 21
   Script: {instanceID: 0}
@@ -34,10 +32,6 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 65
   Script: {instanceID: 0}
-- Class: 81
-  Script: {instanceID: 0}
-- Class: 84
-  Script: {instanceID: 0}
 - Class: 108
   Script: {instanceID: 0}
 - Class: 114
@@ -48,5 +42,5 @@ ClassTypes:
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
-- Assets/MapPrefabs/SDK Map.prefab
+- Assets/MapPrefabs/SDK Example.prefab
 Dependencies: []
