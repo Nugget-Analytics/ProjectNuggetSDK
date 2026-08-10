@@ -9,7 +9,6 @@ Shader "Shader Forge/Ring&main"
     {
         Tags
         {
-            "RenderPipeline"="UniversalPipeline"
             "RenderType"="Opaque"
             "Queue"="Geometry"
         }
@@ -17,23 +16,19 @@ Shader "Shader Forge/Ring&main"
         Pass
         {
             Name "Forward"
-            Tags
-            {
-                "LightMode"="UniversalForward"
-            }
 
             Cull Back
             ZWrite On
             ZTest LEqual
 
-            HLSLPROGRAM
+            CGPROGRAM
 
             #pragma vertex vert
             #pragma fragment frag
             #pragma target 3.0
             #pragma multi_compile_instancing
 
-            #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
+            #include "UnityCG.cginc"
 
             UNITY_INSTANCING_BUFFER_START(Props)
                 UNITY_DEFINE_INSTANCED_PROP(float4, _Color)
@@ -60,15 +55,14 @@ Shader "Shader Forge/Ring&main"
                 UNITY_SETUP_INSTANCE_ID(IN);
                 UNITY_TRANSFER_INSTANCE_ID(IN, OUT);
 
-                VertexPositionInputs pos = GetVertexPositionInputs(IN.positionOS.xyz);
-
-                OUT.positionCS = pos.positionCS;
+                float4 positionWS = mul(unity_ObjectToWorld, IN.positionOS);
+                OUT.positionCS = mul(UNITY_MATRIX_VP, positionWS);
                 OUT.color = IN.color;
 
                 return OUT;
             }
 
-            half4 frag(Varyings IN) : SV_Target
+            fixed4 frag(Varyings IN) : SV_Target
             {
                 UNITY_SETUP_INSTANCE_ID(IN);
 
@@ -76,10 +70,10 @@ Shader "Shader Forge/Ring&main"
                 float t = IN.color.r * 0.3 + 0.1;
                 float3 col = lerp(baseColor, float3(1.0, 1.0, 1.0), t);
 
-                return half4(col, 1.0);
+                return fixed4(col, 1.0);
             }
 
-            ENDHLSL
+            ENDCG
         }
     }
 }
