@@ -109,10 +109,7 @@ public class MapBuilderEditor : Editor
         EditorUtility.DisplayDialog(
             "Congratulations!",
             "You have built your map! You can share this in the Discord to get it added to Project Nugget!\n\n" +
-            "Remember: scripts are not included in maps, so any code you may have added will NOT work at this time.\n\n" +
-            "Exception: MapSurfaceOverride components DO work - attach one to an object with a collider and set its Surface ID (hand tap sound) and Velocity Multiplier.\n\n" +
-            "MapObjectTrigger components also work - attach one to any object to make a pressable button that enables/disables/toggles the objects in its lists (it needs a Box Collider with Is Trigger on, sized to where hands should press). Assign its Button Renderer plus Pressed/Unpressed Materials for visual press feedback.",
-            "OK"
+            "Remember: scripts are not included in maps, so any code you may have added will NOT work at this time.\n\n",            "OK"
         );
 
         string pathBundle = Path.Combine(outFolder, mapName);
