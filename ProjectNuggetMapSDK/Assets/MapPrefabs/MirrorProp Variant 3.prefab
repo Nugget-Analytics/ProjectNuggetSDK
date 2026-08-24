@@ -103,7 +103,7 @@ GameObject:
   - component: {fileID: 3617943929065434776}
   - component: {fileID: 3963416833968496096}
   - component: {fileID: 1978191528623112814}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: CameraL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -195,7 +195,7 @@ GameObject:
   - component: {fileID: 3891600267006789964}
   - component: {fileID: 2843843391623099547}
   - component: {fileID: 7628451517407562594}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: CameraR
   m_TagString: Untagged
   m_Icon: {fileID: 0}

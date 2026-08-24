@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 2749498433278726754}
   - component: {fileID: 2760369372608819008}
   - component: {fileID: 2768163787518905615}
-  m_Layer: 15
+  m_Layer: 0
   m_Name: GorillaWindTunnelInstance
   m_TagString: Untagged
   m_Icon: {fileID: 0}
